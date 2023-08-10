@@ -18,7 +18,7 @@ export const SearchPage = () => {
     searchText: q
   });
 
-  const onSearchSubmit = (event: any) => {
+  const onSearchSubmit = (event: React.FormEvent<HTMLFormElement> ) => {
     event.preventDefault();
     if ( searchText.trim().length <= 1) return;
 
